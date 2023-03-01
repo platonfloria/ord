@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  app:
+    build:
+      context: .
+      target: prod
+    command: --testnet --rpc-url host.docker.internal:18332 wallet balance
+    volumes:
+      - ./mnt/index:/ord/index
+      - ${BITCOIN_DATA_DIR}:/ord/bitcoin

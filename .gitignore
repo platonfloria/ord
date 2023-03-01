@@ -1,5 +1,6 @@
 /.idea/
 /.vagrant
+/.env
 /docs/build
 /fuzz/artifacts
 /fuzz/corpus
@@ -10,3 +11,4 @@
 /target
 /test-times.txt
 /tmp
+/mnt
